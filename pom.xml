@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.iot.market.rpc.interfaces</groupId>
+	<artifactId>xm-iot-client</artifactId>
+	<version>1.0.0.SNAPSHORT</version>
+	<packaging>jar</packaging>
+	<name>Market Rpc interface</name>
+	<description>Market Rpc interface</description>
+
+	<properties>
+		<jave.version>1.8</jave.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>xiaomai Team Repository</name>
+			<url>http://nexus.imxiaomai.com:8081/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>xiaomai-release</id>
+			<name>xiaomai Team Release Repository</name>
+			<url>http://nexus.imxiaomai.com:8081/nexus/content/repositories/releases/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>xiaomai-snapshot</id>
+			<name>xiaomai Team Snapshot Repository</name>
+			<url>http://nexus.imxiaomai.com:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.5</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.4</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${jave.version}</source>
+					<target>${jave.version}</target>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
