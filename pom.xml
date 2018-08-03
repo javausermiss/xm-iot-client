@@ -6,8 +6,8 @@
 	<artifactId>xm-iot-client</artifactId>
 	<version>1.0.0.SNAPSHORT</version>
 	<packaging>jar</packaging>
-	<name>Market Rpc interface</name>
-	<description>Market Rpc interface</description>
+	<name>Xm Iot Rpc client</name>
+	<description>Xm Iot Rpc client</description>
 
 	<properties>
 		<jave.version>1.8</jave.version>
