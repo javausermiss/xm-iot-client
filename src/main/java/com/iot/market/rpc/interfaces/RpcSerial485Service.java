@@ -17,4 +17,6 @@ public interface RpcSerial485Service {
      * @return
      */
     RpcCommandResult serial485Control(String marketId, String commandType, String addr, String value, String from);
+
+    RpcCommandResult serialSceneControl(String marketId, String type, String value, String from);
 }
