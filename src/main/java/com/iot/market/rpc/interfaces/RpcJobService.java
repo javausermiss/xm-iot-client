@@ -5,5 +5,7 @@ package com.iot.market.rpc.interfaces;
  */
 public interface RpcJobService {
 
-    String getJobStatus(String group, String name);
+    String getJob(String group, String name);
+
+    Boolean removeJob(String group, String name);
 }
