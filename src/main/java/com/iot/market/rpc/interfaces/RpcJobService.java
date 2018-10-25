@@ -8,4 +8,6 @@ public interface RpcJobService {
     String getJob(String group, String name);
 
     Boolean removeJob(String group, String name);
+
+    String getJobByGroup(String group);
 }
