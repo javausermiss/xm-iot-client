@@ -1,36 +1,38 @@
 package com.iot.market.rpc.interfaces.po;
 
+import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * 用户信息
  */
-public class User implements Serializable {
+@Table(name = "users")
+public class User implements Serializable{
     private static final long serialVersionUID = 6736457239453512995L;
 
-    public User() {
-    }
+    public User(){}
 
-    public User(Integer id) {
+    public User(Integer id){
         this.id = id;
     }
-
-    public User(String storeCode) {
+    public User(String storeCode){
         this.storeCode = storeCode;
     }
 
-    public User(String mobile, Integer id) {
+    public User(String mobile, Integer id){
         this.mobile = mobile;
         this.id = id;
     }
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "user_name")
     private String userName;
 
     private String password;
 
+    @Column(name = "nick_name")
     private String nickName;
 
     private String mobile;
@@ -47,13 +49,17 @@ public class User implements Serializable {
 
     private Integer yn;
 
+    @Transient
     private String roleId;//职能角色
 
+    @Transient
     private String storeNum;//职能角色
 
 
+    @Transient
     private String storeCode;//门店编码
 
+    @Transient
     private String sessionId;
 
     public Integer getId() {
