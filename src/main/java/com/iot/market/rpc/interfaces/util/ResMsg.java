@@ -19,6 +19,21 @@ public class ResMsg<T> implements Serializable {
 
 	private static final long serialVersionUID = 5672931283338623527L;
 
+	/**
+	 * 成功
+	 */
+	public static final int SUCCESS = 200;
+
+	/**
+	 * 参数错误
+	 */
+	public static final int PARAM_ERROR = 400;
+
+	/**
+	 * 服务异常
+	 */
+	public static final int SERVER_ERROR = 500;
+
 	private Integer code;//200:成功, 400:参数有问题,500服务器异常
 	private String des;//对问题的描述
 	private T obj;//数据
