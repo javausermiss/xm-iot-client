@@ -36,13 +36,13 @@ public class Instant implements Serializable{
 
     private Integer yn;
 
-    private List<Integer> list;
+    private List<Instant> list;
 
-    public List<Integer> getList() {
+    public List<Instant> getList() {
         return list;
     }
 
-    public void setList(List<Integer> list) {
+    public void setList(List<Instant> list) {
         this.list = list;
     }
 
