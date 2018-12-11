@@ -2,6 +2,7 @@ package com.iot.market.rpc.interfaces.bean;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 冷藏业务
@@ -34,6 +35,16 @@ public class Coldstorage implements Serializable{
     private String updated;
 
     private Integer yn;
+
+    private List<Coldstorage> list;
+
+    public List<Coldstorage> getList() {
+        return list;
+    }
+
+    public void setList(List<Coldstorage> list) {
+        this.list = list;
+    }
 
     public String getDes() {
         return des;

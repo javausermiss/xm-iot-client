@@ -2,6 +2,7 @@ package com.iot.market.rpc.interfaces.bean;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 速食业务
@@ -34,6 +35,16 @@ public class Instant implements Serializable{
     private String updated;
 
     private Integer yn;
+
+    private List<Integer> list;
+
+    public List<Integer> getList() {
+        return list;
+    }
+
+    public void setList(List<Integer> list) {
+        this.list = list;
+    }
 
     public String getDes() {
         return des;
