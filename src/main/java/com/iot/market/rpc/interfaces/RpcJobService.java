@@ -11,5 +11,5 @@ public interface RpcJobService {
 
     String getJobByGroup(String group);
 
-    Boolean addJob(String jsonJob);
+    Boolean addBatchPowerJob(String jsonJob);
 }
