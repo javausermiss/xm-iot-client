@@ -38,6 +38,16 @@ public class Instant implements Serializable{
 
     private List<Instant> list;
 
+    private String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     public List<Instant> getList() {
         return list;
     }
