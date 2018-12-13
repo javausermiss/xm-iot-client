@@ -23,7 +23,7 @@ public interface AppImageService {
      * 查询设备详情图片
      * @return
      */
-    AppImage queyrAppImage(Instant param) throws Exception;
+    AppImage queyrAppImage(AppImage param) throws Exception;
 
 
 }
