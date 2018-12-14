@@ -16,14 +16,14 @@ public interface AppImageService {
      * 获取一级列表
      * @return
      */
-    List<AppImage> queyrAppImageList(AppImage param,String storeCode) throws Exception;
+    List<AppImage> queryAppImageList(AppImage param,String storeCode) throws Exception;
 
 
     /**
      * 查询设备详情图片
      * @return
      */
-    AppImage queyrAppImage(AppImage param) throws Exception;
+    AppImage queryAppImage(AppImage param) throws Exception;
 
 
 }
