@@ -16,7 +16,7 @@ public interface AppImageService {
      * 获取一级列表
      * @return
      */
-    List<AppImage> queyrAppImageList(AppImage param) throws Exception;
+    List<AppImage> queyrAppImageList(AppImage param,String storeCode) throws Exception;
 
 
     /**
