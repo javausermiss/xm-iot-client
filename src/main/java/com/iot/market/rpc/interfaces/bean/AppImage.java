@@ -40,6 +40,16 @@ public class AppImage implements Serializable{
 
     private Integer yn;
 
+    private String kwh;
+
+    public String getKwh() {
+        return kwh;
+    }
+
+    public void setKwh(String kwh) {
+        this.kwh = kwh;
+    }
+
     public Integer getId() {
         return id;
     }
