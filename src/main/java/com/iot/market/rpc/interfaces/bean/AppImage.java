@@ -42,6 +42,16 @@ public class AppImage implements Serializable{
 
     private String kwh;
 
+    private String storeCode;
+
+    public String getStoreCode() {
+        return storeCode;
+    }
+
+    public void setStoreCode(String storeCode) {
+        this.storeCode = storeCode;
+    }
+
     public String getKwh() {
         return kwh;
     }
