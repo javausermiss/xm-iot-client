@@ -4,6 +4,7 @@ package com.iot.market.rpc.interfaces.service;
 import com.iot.market.rpc.interfaces.bean.AppImage;
 import com.iot.market.rpc.interfaces.bean.Instant;
 import com.iot.market.rpc.interfaces.util.ResMsg;
+import com.iot.market.rpc.interfaces.vo.StatisticsVo;
 
 import java.util.List;
 
@@ -24,6 +25,12 @@ public interface AppImageService {
      * @return
      */
     AppImage queryAppImage(AppImage param) throws Exception;
+
+    /**
+     * 设备统计type: 1_电量统计 2_功率统计  3_温度统计
+     * @return
+     */
+    AppImage statistics(StatisticsVo param) throws Exception;
 
 
 }
