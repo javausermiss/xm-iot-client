@@ -13,7 +13,7 @@ public class StatisticsVo implements Serializable{
 
     private String facilityCode;
 
-    private String day;
+    private Integer day;
 
     private Integer type;
 
@@ -33,11 +33,11 @@ public class StatisticsVo implements Serializable{
         this.facilityCode = facilityCode;
     }
 
-    public String getDay() {
+    public Integer getDay() {
         return day;
     }
 
-    public void setDay(String day) {
+    public void setDay(Integer day) {
         this.day = day;
     }
 
