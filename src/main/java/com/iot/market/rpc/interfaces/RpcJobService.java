@@ -16,4 +16,6 @@ public interface RpcJobService {
     ResMsg<String> addBatchPowerJob(String jsonJob);
 
     ResMsg<String> addTimerJob(String jsonJob);
+
+    ResMsg<String> switchJob(String group, String name, Boolean enable);
 }
