@@ -18,4 +18,10 @@ public interface RpcJobService {
     ResMsg<String> addTimerJob(String jsonJob);
 
     ResMsg<String> switchJob(String group, String name, Boolean enable);
+
+    ResMsg<String> addTrigger(String jobGroup, String jobName, String jsonTrigger);
+
+    ResMsg<String> deleteTrigger(String triggerGroup, String triggerName);
+
+    ResMsg<String> switchTrigger(String triggerGroup, String triggerName, Boolean enable);
 }
