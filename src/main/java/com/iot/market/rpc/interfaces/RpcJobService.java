@@ -24,4 +24,6 @@ public interface RpcJobService {
     ResMsg<String> deleteTrigger(String triggerGroup, String triggerName);
 
     ResMsg<String> switchTrigger(String triggerGroup, String triggerName, Boolean enable);
+
+    ResMsg<String> getTriggerByKey(String jobGroup, String jobName);
 }
