@@ -4,6 +4,7 @@ package com.iot.market.rpc.interfaces.service;
 
 import com.iot.market.rpc.interfaces.bean.Store;
 import com.iot.market.rpc.interfaces.bean.StoreUser;
+import com.iot.market.rpc.interfaces.bean.VoiceConfig;
 
 import java.util.List;
 
@@ -18,6 +19,14 @@ public interface WebAppUserService {
      * @return
      */
     List<Store> queryStoreByUser(StoreUser param) throws Exception;
+
+
+    /**
+     * 获取门店TV通信ID
+     * @param storeCode 门店ID
+     * @return
+     */
+    VoiceConfig queryStoreTvCodeByStoreCode(String storeCode)throws Exception;
 
 
 
