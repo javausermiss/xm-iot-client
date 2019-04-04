@@ -40,6 +40,16 @@ public class Instant implements Serializable{
 
     private String url;
 
+    private String lmCode;
+
+    public String getLmCode() {
+        return lmCode;
+    }
+
+    public void setLmCode(String lmCode) {
+        this.lmCode = lmCode;
+    }
+
     public String getUrl() {
         return url;
     }
