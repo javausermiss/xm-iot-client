@@ -44,6 +44,14 @@ public class AppImage implements Serializable{
 
     private String storeCode;
 
+    private String power;
+
+    private String tempSet;
+
+    private String tempNow;
+
+    private String stateWork;
+
     public String getStoreCode() {
         return storeCode;
     }
@@ -154,5 +162,37 @@ public class AppImage implements Serializable{
 
     public void setYn(Integer yn) {
         this.yn = yn;
+    }
+
+    public String getPower() {
+        return power;
+    }
+
+    public void setPower(String power) {
+        this.power = power;
+    }
+
+    public String getTempSet() {
+        return tempSet;
+    }
+
+    public void setTempSet(String tempSet) {
+        this.tempSet = tempSet;
+    }
+
+    public String getTempNow() {
+        return tempNow;
+    }
+
+    public void setTempNow(String tempNow) {
+        this.tempNow = tempNow;
+    }
+
+    public String getStateWork() {
+        return stateWork;
+    }
+
+    public void setStateWork(String stateWork) {
+        this.stateWork = stateWork;
     }
 }
