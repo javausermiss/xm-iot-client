@@ -8,7 +8,7 @@ import java.util.List;
  * 速食业务
  */
 @Table(name = "instant")
-public class Instant implements Serializable{
+public class Instant implements Serializable {
 
     private static final long serialVersionUID = 5884953452469224288L;
 
@@ -35,12 +35,14 @@ public class Instant implements Serializable{
     private String updated;
 
     private Integer yn;
-
+    @Transient
     private List<Instant> list;
-
+    @Transient
     private String url;
-
+    @Column(name = "lmcode")
     private String lmCode;
+
+    private Integer categoryid;
 
     public String getLmCode() {
         return lmCode;
@@ -144,5 +146,13 @@ public class Instant implements Serializable{
 
     public void setYn(Integer yn) {
         this.yn = yn;
+    }
+
+    public Integer getCategoryid() {
+        return categoryid;
+    }
+
+    public void setCategoryid(Integer categoryid) {
+        this.categoryid = categoryid;
     }
 }

@@ -52,6 +52,8 @@ public class AppImage implements Serializable{
 
     private String stateWork;
 
+    private String swichValue;
+
     public String getStoreCode() {
         return storeCode;
     }
@@ -194,5 +196,13 @@ public class AppImage implements Serializable{
 
     public void setStateWork(String stateWork) {
         this.stateWork = stateWork;
+    }
+
+    public String getSwichValue() {
+        return swichValue;
+    }
+
+    public void setSwichValue(String swichValue) {
+        this.swichValue = swichValue;
     }
 }
