@@ -43,6 +43,8 @@ public class Instant implements Serializable {
     private String lmCode;
 
     private Integer categoryid;
+    @Transient
+    private String categorydesc;
 
     public String getLmCode() {
         return lmCode;
@@ -154,5 +156,13 @@ public class Instant implements Serializable {
 
     public void setCategoryid(Integer categoryid) {
         this.categoryid = categoryid;
+    }
+
+    public String getCategorydesc() {
+        return categorydesc;
+    }
+
+    public void setCategorydesc(String categorydesc) {
+        this.categorydesc = categorydesc;
     }
 }
